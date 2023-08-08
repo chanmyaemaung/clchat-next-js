@@ -26,6 +26,9 @@ async function getData() {
   return data;
 }
 
+//! Next JS Cache Busting
+export const dynamic = "force-dynamic";
+
 export default async function ChatHomepage() {
   const session = await getServerSession(authOptions);
   const data = await getData();
